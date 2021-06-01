@@ -1,13 +1,16 @@
 {
-  "name": "nodejstrainee",
+  "name": "node-express",
   "version": "1.0.0",
-  "description": "NodeJS Trainee Project",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,19 @@
     "url": "https://github.com/LexasBY/NodeJSTrainee/issues"
   },
   "homepage": "https://github.com/LexasBY/NodeJSTrainee#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2",
+    "swagger-jsdoc": "^6.0.1",
+    "swagger-ui-express": "^4.1.6"
+  },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.2",
@@ -33,6 +49,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jest": "^24.3.6",
     "jest": "^26.6.3",
-    "jest-cli": "^26.6.3"
+    "jest-cli": "^26.6.3",
+    "nodemon": "^1.18.11"
   }
 }
