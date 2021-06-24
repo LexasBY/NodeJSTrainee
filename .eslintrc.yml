@@ -2,6 +2,7 @@ plugins:
   - babel
   - jest
 env:
+  browser: true
   node: true
   jest: true
 parser: babel-eslint
@@ -10,3 +11,6 @@ extends:
   - 'plugin:jest/recommended'
 rules:
   no-console: 0
+  linebreak-style: 0
+  react/jsx-filename-extension: 0
+  import/extensions: off

@@ -1,0 +1,29 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">NodeJS trainee chat</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isHome}}
+        <li class="active"><a href="/api/auth/chat">Chat page</a></li>
+      {{else}}
+        <li><a href="/api/auth/chat">Chat page</a></li>
+      {{/if}}
+
+      {{#if isSignin}}
+        <li class="active"><a href="/api/auth/signin">Sign In</a></li>
+      {{else}}
+        <li><a href="/api/auth/signin">Sign In</a></li>
+      {{/if}}
+
+      {{#if isSignUp}}
+        <li class="active"><a href="/api/auth/signup">Sign Up</a></li>
+      {{else}}
+        <li><a href="/api/auth/signup">Sign Up</a></li>
+      {{/if}} 
+
+      <li class=""><a href="/">Sign Out</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
